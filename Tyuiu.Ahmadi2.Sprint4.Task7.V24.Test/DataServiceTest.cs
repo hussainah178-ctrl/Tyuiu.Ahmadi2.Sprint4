@@ -13,7 +13,7 @@ namespace Tyuiu.Ahmadi2.Sprint4.Task7.V24.Test
 
             string str = "651827384219648";
             int res = ds.Calculate(str);
-            int wait = 1179648; // مقدار صحیح
+            int wait = 1179648;
 
             Assert.AreEqual(wait, res);
         }

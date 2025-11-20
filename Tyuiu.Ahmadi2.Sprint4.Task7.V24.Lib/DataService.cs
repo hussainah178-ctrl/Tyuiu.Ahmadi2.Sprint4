@@ -11,10 +11,10 @@ namespace Tyuiu.Ahmadi2.Sprint4.Task7.V24.Lib
             int[,] matrix = new int[rows, columns];
 
             int index = 0;
-            int product = 1;
+            int product = 1; 
             bool hasEven = false;
 
-            // Преобразование строки в матрицу
+            
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
@@ -22,8 +22,8 @@ namespace Tyuiu.Ahmadi2.Sprint4.Task7.V24.Lib
                     matrix[i, j] = int.Parse(str[index].ToString());
                     index++;
 
-                    // Проверка на четность и вычисление произведения
-                    if (matrix[i, j] % 2 == 0)
+                    
+                    if (matrix[i, j] % 2 == 0)  
                     {
                         product *= matrix[i, j];
                         hasEven = true;
